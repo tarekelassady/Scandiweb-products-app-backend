@@ -30,7 +30,7 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname+"/public")));
 
 
-const port=4000;
-app.listen(port,()=>{
+
+app.listen(7795||8800,()=>{
     console.log("Connected");
 })
