@@ -15,9 +15,9 @@ app.get('/' , (req,res) => {
 // app.use(express.json());
 // app.use("/api/products",productsController);
 
-// app.get('/' , (req,res) => {
-//   res.send('hey Tarek Elassady!')
-// })
+app.get('/' , (req,res) => {
+  res.send('hey Tarek Elassady222!')
+})
 
 
 const PORT=4000
