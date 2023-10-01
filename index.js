@@ -17,6 +17,6 @@ app.get('/' , (req,res) => {
 
 
 const PORT=4000
-app.listen(process.env.MYSQLPORT,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("Connected to ");
 })
