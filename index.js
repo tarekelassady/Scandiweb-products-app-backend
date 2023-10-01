@@ -14,6 +14,6 @@ app.get('/' , (req,res) => {
   res.send('hey Tarek Elassady!')
 })
 
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.MYSQLPORT,()=>{
     console.log("Connected to ");
 })
