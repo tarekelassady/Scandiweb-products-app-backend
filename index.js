@@ -5,8 +5,10 @@ import multer from 'multer'
 import path from 'path'
 import { fileURLToPath } from 'url';
 import { db } from "./db.js";
+import dotenv from "dotenv"
 
 const app= express();
+dotenv.config();
 app.use(cors());
 app.use(express.json());
 app.use("/api/products",productsController);
@@ -31,6 +33,6 @@ app.use(express.static(path.join(__dirname+"/public")));
 
 
 
-app.listen(5000||8800,()=>{
+app.listen(process.env.MYSQLPORT||8800,()=>{
     console.log("Connected");
 })

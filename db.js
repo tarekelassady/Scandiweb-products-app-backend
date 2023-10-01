@@ -6,7 +6,7 @@ import mysql from 'mysql'
 const urlDB=`mysql://${process.env.MYSQLUSER}:${process.env.MYSQLPASSWORD}@${process.env.MYSQLHOST}:${process.env.MYSQLPORT}/${process.env.MYSQLDATABASE}`
 export const db=mysql.createConnection({
     host:process.env.MYSQLHOST,
-    // port:4000,
+    // port:5000,
     user:process.env.MYSQLUSER,
     password:process.env.MYSQLPASSWORD,
     database:process.env.MYSQLDATABASE
