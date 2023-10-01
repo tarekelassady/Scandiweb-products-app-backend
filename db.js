@@ -13,3 +13,7 @@ export const db=mysql.createConnection(urlDB
 //     database:process.env.MYSQLDATABASE
 // }
 );
+db.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+  });
