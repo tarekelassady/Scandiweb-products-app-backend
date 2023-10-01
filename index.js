@@ -16,23 +16,23 @@ app.use("/api/products",productsController);
 app.get('/' , (req,res) => {
   res.send('hey Tarek!')
 })
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-      cb(null, '../client/public/upload')
-    },
-    filename: (req, file, cb) => {
-      cb(null, Date.now()+file.originalname);
-    }
-  })
-const upload=multer({storage});
-app.post('/api/upload',upload.single('file'), (req,res)=>{
-    const file=req.file;
-    res.status(200).json(file.filename);
-})
+// const storage = multer.diskStorage({
+//     destination: (req, file, cb) => {
+//       cb(null, '../client/public/upload')
+//     },
+//     filename: (req, file, cb) => {
+//       cb(null, Date.now()+file.originalname);
+//     }
+//   })
+// const upload=multer({storage});
+// app.post('/api/upload',upload.single('file'), (req,res)=>{
+//     const file=req.file;
+//     res.status(200).json(file.filename);
+// })
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-app.use(express.static(path.join(__dirname+"/public")));
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
+// app.use(express.static(path.join(__dirname+"/public")));
 
 
 
