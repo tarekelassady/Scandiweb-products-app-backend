@@ -16,7 +16,6 @@ app.get('/' , (req,res) => {
 // app.use("/api/products",productsController);
 
 
-const PORT=4000
 app.listen(process.env.PORT,()=>{
     console.log("Connected to ");
 })
