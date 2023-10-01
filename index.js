@@ -12,12 +12,12 @@ app.get('/' , (req,res) => {
   res.send('hey Tarek!')
 })
 
-app.use(express.json());
+// app.use(express.json());
 // app.use("/api/products",productsController);
 
-app.get('/' , (req,res) => {
-  res.send('hey Tarek Elassady!')
-})
+// app.get('/' , (req,res) => {
+//   res.send('hey Tarek Elassady!')
+// })
 
 
 const PORT=4000
