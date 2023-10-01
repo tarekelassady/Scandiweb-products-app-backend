@@ -13,8 +13,8 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/products",productsController);
 
-app.get("/",(req,res)=>{
-  res.send("Hi from Scandiweb");
+app.get('/' , (req,res) => {
+  res.send('hey Tarek!')
 })
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
