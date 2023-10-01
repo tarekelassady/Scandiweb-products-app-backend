@@ -9,18 +9,14 @@ dotenv.config();
 // app.use(cors());
 
 app.get('/' , (req,res) => {
-  res.send('hey Tarek!')
+  res.send('hey Tarekddafdasf3234!')
 })
 
 // app.use(express.json());
 // app.use("/api/products",productsController);
 
-app.get('/' , (req,res) => {
-  res.send('hey Tarek Elassady222!')
-})
-
 
 const PORT=4000
-app.listen(process.env.MYSQLPORT||PORT,()=>{
-    console.log("Connected to "+ PORT);
+app.listen(process.env.MYSQLPORT,()=>{
+    console.log("Connected to ");
 })
