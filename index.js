@@ -13,6 +13,9 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/products",productsController);
 
+app.get("/",(req,res)=>{
+  res.send("Hi from Scandiweb");
+})
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
       cb(null, '../client/public/upload')
