@@ -3,7 +3,7 @@ dotenv.config();
 import mysql from 'mysql'
 
 // const urlDB=`mysql://root:Mx2Tb7YFP2ndln3Foglp@containers-us-west-191.railway.app:7795/railway`
-const urlDB=`mysql://${process.env.USER}:${process.env.PASSWORD}@${process.env.HOST}:${process.env.PORT}/${process.env.DATABASE}`
+const urlDB=`mysql://${process.env.USER}:${process.env.PASSWORD}@${process.env.HOST}/${process.env.DATABASE}`
 export const db=mysql.createConnection(urlDB
 //     {
 //     host:process.env.MYSQLHOST,
