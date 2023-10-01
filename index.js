@@ -9,7 +9,7 @@ dotenv.config();
 app.use(cors());
 
 app.get('/' , (req,res) => {
-  res.send('hey Tarekddafdasf3234!')
+  res.send('hey Tarek Elassady!')
 })
 
 app.use(express.json());
